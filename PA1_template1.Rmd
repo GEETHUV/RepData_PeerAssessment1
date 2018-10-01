@@ -1,6 +1,8 @@
 
 Reproducibe Research Week 2 Assignment
+
 Loading and preprocessing the data
+
 >activity<-read.csv("activity.csv")
 
 >head(activy)
