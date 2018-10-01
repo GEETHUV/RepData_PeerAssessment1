@@ -59,6 +59,19 @@ Error: object 'clean_activity' not found
 
 >   hist(steps_per_day$steps, main="Total Number of Steps per day", xlab = "Steps per Day")
 
+Calculate and report the mean and median total number of steps taken per day
+
+>  summary(steps_per_day)
+
+         date        steps      
+ 2012-10-02: 1   Min.   :   41  
+ 2012-10-03: 1   1st Qu.: 8841  
+ 2012-10-04: 1   Median :10765  
+ 2012-10-05: 1   Mean   :10766  
+ 2012-10-06: 1   3rd Qu.:13294  
+ 2012-10-07: 1   Max.   :21194  
+ (Other)   :47  
+
 
 ## What is the average daily activity pattern?
 
