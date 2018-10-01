@@ -1,13 +1,13 @@
 
 Reproducibe Research Week 2 Assignment
 Loading and preprocessing the data
-activity<-read.csv("activity.csv")
+>activity<-read.csv("activity.csv")
 
-head(activy)
+>head(activy)
 
 Error in head(act) : object 'acttivy' not found
 
-head(activity)
+>head(activity)
 
 output
 
@@ -27,12 +27,12 @@ steps date interval
 
 Now we have to remove the NA values from our data. For that
 
-Clean_activity<-activity[complete.cases(activity),]
+>Clean_activity<-activity[complete.cases(activity),]
 
-dim(clean_activity)
+>dim(clean_activity)
 
 Error: object 'clean_activity' not found
 
-dim(Clean_activity)
+>dim(Clean_activity)
 
 [1] 15264 3
