@@ -9,21 +9,37 @@ output:
 ## Loading and preprocessing the data
 
 > activity<-read.csv("activity.csv")
+
 > head(activy)
+
 Error in head(act) : object 'acttivy' not found
+
 > head(activity)
+
 output
+
   steps       date interval
+  
 1    NA 2012-10-01        0
+
 2    NA 2012-10-01        5
+
 3    NA 2012-10-01       10
+
 4    NA 2012-10-01       15
+
 5    NA 2012-10-01       20
+
 6    NA 2012-10-01       25
+
 Now we have to remove the NA values from our data. For that
+
 > Clean_activity<-activity[complete.cases(activity),]
+
 > dim(clean_activity)
+
 Error: object 'clean_activity' not found
+
 > dim(Clean_activity)
 
 [1] 15264     3
