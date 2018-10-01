@@ -79,9 +79,7 @@ Calculate and report the mean and median total number of steps taken per day
 
 > head(steps_per_interval)
 
-> plot(steps_per_interval$interval, steps_per_interval$steps, type='l', 
-+     main="Average number of steps per interval across all days", xlab="Interval", 
-+     ylab="Average number of steps")
+> plot(steps_per_interval$interval, steps_per_interval$steps, type='l',main="Average number of steps per interval across all days", xlab="Interval", ylab="Average number of steps")
 
 > 
 
