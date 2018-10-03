@@ -64,3 +64,23 @@ summary(steps_per_day)
 
 (Other) :47
 
+What is the average daily activity pattern?
+
+steps_per_interval <- aggregate(steps ~ interval, Clean_activity, mean)
+
+head(steps_per_interval)
+  interval     steps
+  
+1        0 1.7169811
+
+2        5 0.3396226
+
+3       10 0.1320755
+
+4       15 0.1509434
+
+5       20 0.0754717
+
+6       25 2.0943396
+
+> plot(steps_per_interval$interval, steps_per_interval$steps, type='l',main="Average number of steps per interval across all days", xlab="Interval", ylab="Average number of steps")
