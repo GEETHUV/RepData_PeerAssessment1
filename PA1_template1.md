@@ -38,8 +38,6 @@ What is mean total number of steps taken per day?
 
 steps_per_day <- aggregate(steps ~ date, Clean_activity, sum)
 
-TOTAL NUMBER OF MISSING VALUES IN THE DATASET
-
 
 head(steps_per_day)
 
