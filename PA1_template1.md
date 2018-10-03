@@ -5,10 +5,6 @@ Loading and preprocessing the data
 
 >activity<-read.csv("activity.csv")
 
->head(activy)
-
-Error in head(act) : object 'acttivy' not found
-
 >head(activity)
 
 output
