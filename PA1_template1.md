@@ -27,15 +27,11 @@ Now we have to remove the NA values from our data. For that
 
 >Clean_activity<-activity[complete.cases(activity),]
 
->dim(clean_activity)
-
-Error: object 'clean_activity' not found
-
 >dim(Clean_activity)
 
 [1] 15264 3
 
-What is mean total number of steps taken per day?
+ MEAN TOTAL NUMBER OD STEPS TAKEN PER DAY
 
 steps_per_day <- aggregate(steps ~ date, Clean_activity, sum)
 
@@ -44,11 +40,22 @@ head(steps_per_day)
 
 
     date steps
-1 2012-10-02 126 2 2012-10-03 11352 3 2012-10-04 12116 4 2012-10-05 13294 5 2012-10-06 15420 6 2012-10-07 11015
+1 2012-10-02 126 
+
+2 2012-10-03 11352 
+
+3 2012-10-04 12116 
+
+4 2012-10-05 13294 
+
+5 2012-10-06 15420 
+
+6 2012-10-07 11015
+
 
 hist(steps_per_day$steps, main="Total Number of Steps per day", xlab = "Steps per Day")
 
-Calculate and report the mean and median total number of steps taken per day
+MEAN AND MEDIAN OF TOTAL NO.OF STEPS TAKEN PER DAY
 
 summary(steps_per_day)
 
@@ -66,8 +73,7 @@ summary(steps_per_day)
 2012-10-07: 1 Max. :21194
 
 (Other) :47
-
-What is the average daily activity pattern?
+AVERAGE DAILY ACTIVITY PATTERN?
 
 steps_per_interval <- aggregate(steps ~ interval, Clean_activity, mean)
 
